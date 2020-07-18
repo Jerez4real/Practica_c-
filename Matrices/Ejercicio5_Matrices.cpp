@@ -1,0 +1,35 @@
+/* Realice un programa que lea una matriz de 3x3 y cree su matriz traspuesta. la matriz traspuesta es aquella en la que la columna i era la fila i de la matriz original*/
+
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int matriz[3][3];
+
+    for(int i = 0 ; i < 3 ; i++){
+        for(int j = 0 ; j < 3 ; j++){
+            cout<<"Ingrese numeros["<<i<<","<<j<<"]: "; cin>> matriz[i][j];
+        }
+    }
+
+    cout<<"Matriz Original: "<<endl;
+
+    for(int i = 0 ; i < 3 ; i++){
+        for(int j = 0 ; j < 3 ; j++){
+            cout<<matriz[i][j]<<' ';
+        }
+        cout<<endl;
+    }
+
+    cout<<"Matriz Transpuesta: "<<endl;
+
+    for(int i = 0 ; i < 3 ; i++){
+        for(int j = 0 ; j < 3 ; j++){
+            cout<<matriz[j][i]<<' ';
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
